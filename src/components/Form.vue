@@ -9,7 +9,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <form class="row g-3 bg-blue rounded-3" @submit="registrarPedido()">
+                <form class="row g-3 bg-blue rounded-3" @submit.prevent="registrarPedido()">
                     <div class="col-md-4">
                         <label for="nombre" class="form-label">Nombre Completo</label>
                         <input type="text" class="form-control" id="nombre" v-model="nombre" placeholder="Ingrese su nombre completo" required>
